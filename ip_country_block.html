@@ -1,50 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You HAVE BEEN BANNED! - pmh.codes</title>
+    <title>IP Blocked - pmh.codes</title>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/39158228" type="image/x-icon">
   </head>
   <body>
-    <div id="a">
-      <div id="b">
-        <p id="c">You HAVE BEEN BANNED from our network.</p>
-        <p>IP: <a href="https://www.infobyip.com/ip-::CLIENT_IP::.html" id="d">::CLIENT_IP::</a></p>
-        <p>If you think this is wrong. contact <a href="mailto:pmh_only@pmh.codes">pmh_only@pmh.codes</a></p>
-      </div>
+    <div class="padding">
+      <p>Oops!</p>
+      <br>
+      <p>your ip, <span class="red">::CLIENT_IP::</span> has been blocked from our network!</p>
+      <br>
+      <p>If you feel weird, contact me: <a href="mailto:pmh_only@pmh.codes" class="a-clear">pmh_only@pmh.codes</a></p>
     </div>
   </body>
   <style>
     html, body {
-      margin: 0;
       padding: 0;
+      margin: 0;
+      width: 100%;
       height: 100%;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #fafafa;
+      background: black;
+      color: rgb(0, 255, 0);
+      filter: blur(0.5px);
+      text-shadow: 0 0 0.5em rgb(0, 255, 0);
     }
 
-    #a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
+    h1, h2, h3, h4, h5, h6, p {
+      padding: 0;
+      margin: 0;
     }
 
-    #b {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      border-radius: 5px;
-      text-align: center;
+    .padding {
+      padding: 15px;
     }
 
-    #c {
-      font-weight: bold;
-      font-size: 20px;
+    .red {
+      color: rgb(255, 0, 0);
+      text-shadow: 0 0 0.5em rgb(255, 0, 0);
     }
 
-    #d {
-      color: red;
+    .a-clear {
+      color: rgb(0, 255, 255);
+      text-shadow: 0 0 0.5em rgb(0, 255, 255);
+      text-decoration: none;
+    }
+
+    .a-clear:hover {
+      text-decoration: underline;
     }
   </style>
 </html>
